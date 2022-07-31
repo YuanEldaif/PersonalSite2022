@@ -1,0 +1,88 @@
+---
+title: Learning To Rank (LTR)
+author: Yuan Du
+date: '2021-06-07'
+slug: Decision Theory
+categories:
+  - Statistics
+  - Machine Learning
+  - Data Science
+  - Deep Learning
+tags:
+  - Machine Learning
+  - Data Science
+  - Decision Theory
+  - LTR
+  - Deep Learning
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-06-07T22:27:29-04:00'
+featured: no
+image:
+  caption: yes
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<p>Previously, in the post <a href="https://yuan-du.com/post/2020-12-13-loss-functions/decision-theory/">Loss Functions in Machine Learning and LTR</a> we disscussed about how loss functions were used in ML and briefly mentioned LTR. Here I’ll discuss about LTR. LTR uses Machine Learning (ML)/Artifical Intelligence (AI) to predict rankings/ordinal data. It’s useful for google search, drug discovery, bioinformatics. Here is a list that seperates traditional ML from LTR:</p>
+<ul>
+<li><p>Solve a ranking on a list of items</p></li>
+<li><p>Predict the optimal ordering of the list</p></li>
+<li><p>Doesn’t care much about the score of each item/point</p></li>
+<li><p>only care the relative score/ordering among all the items</p></li>
+</ul>
+<p>For example, if we have 2 ML models to predict students’ score. and our goal is to rank students. and we have below results from the ML models. In this case, <span style="color:red">Model 2</span> is better at ranking compared to Model 1 even though Model 1 has better prediction accuracy. Rank error is pair-wise based and is defined as <span class="math inline">\(\frac{ \# \textrm{ of discordant pairs} }{ \#\textrm{ of total pairs between + and -} }\)</span>.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Student</th>
+<th align="center">True Score</th>
+<th align="center">Model 1</th>
+<th align="left">Model 2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Student1</td>
+<td align="center">90%</td>
+<td align="center">88%</td>
+<td align="left">100%</td>
+</tr>
+<tr class="even">
+<td align="left">Student2</td>
+<td align="center">85%</td>
+<td align="center">89%</td>
+<td align="left">50%</td>
+</tr>
+<tr class="odd">
+<td align="left">Student3</td>
+<td align="center">80%</td>
+<td align="center">83%</td>
+<td align="left">10%</td>
+</tr>
+</tbody>
+</table>
+<p>LTR system includes bipartite ranking, k-partite ranking, real value based ranking. We only talk about bipartite ranking here.</p>
+<p><strong>1. <span style="color:green">Bipartite RankSVM Algorithm</span></strong></p>
+<p>Bipartite RankSVM Algorithm uses hinge loss. The hinge loss is a loss function used for “maximum-margin” classification, most notably for support vector machine (SVM). It’s equivalent to minimize the loss function <span class="math inline">\(L_{hinge}(f,x_i^+,x_i^-) = [1-(f(x_i^+)-f(x_i^-))]_+ [u_+ = max(u,0)]\)</span></p>
+<p>With <span class="math inline">\(f = W * X =\)</span> ranking score, the optimization problem is loss + penalty:
+<span class="math display">\[ \min_{f \in F_k} \frac{1}{mn}\sum_{i=1}^{m} \sum_{j=1}^{n}L_{hinge}(f,x_i^+,x_i^-) + \frac{\lambda}{2}||f||_k^2 \]</span></p>
+<p>Thus, the term <span class="math inline">\(f(x_i^+)-f(x_i^-)\)</span> the larger, the better.If <span class="math inline">\(f(x_i^+)-f(x_i^-) &lt;0\)</span>, it means that it’s making mistakes so the objection function is penalized.</p>
+<p><strong>2. <span style="color:DeepSkyBlue">Bipartite RankBoost Algorithm</span></strong></p>
+<p>Bipartite RankBoost Algorithm uses the exponential loss.</p>
+<p>The population minimizer is:
+<span class="math display">\[\min_{f \in L(F_{base})} \frac{1}{mn}\sum_{i=1}^{m} \sum_{j=1}^{n}L_{exp}(f,x_i^+,x_i^-)\]</span></p>
+<p>where <span class="math inline">\(L_{exp}(f,x_i^+,x_i^-) = exp(-f(x_i^+)-f(x_i^-))\)</span>.</p>
+<p><strong>3. <span style="color:Gold">Bipartite RankNet Algorithm</span></strong></p>
+<p>Bipartite RankNet Algorithm uses the logistic loss (binomial log-likelihood loss or cross entropy loss).</p>
+<p>The binomial log-likelihood loss function is:
+<span class="math display">\[\min_{f \in F_{neural}} \frac{1}{mn}\sum_{i=1}^{m} \sum_{j=1}^{n}L_{logistic}(f,x_i^+,x_i^-)\]</span></p>
+<p>where <span class="math inline">\(L_{logistic}(f,x_i^+,x_i^-) = log(1+ exp((-f(x_i^+)-f(x_i^-)))\)</span>.</p>
+<p><br />
+<br />
+<em>Reference:</em></p>
+<p><em><a href="https://archive.siam.org/meetings/sdm10/tutorial1.pdf">Computer Science &amp; Artificial Intelligence Laboratory, MIT</a></em></p>
