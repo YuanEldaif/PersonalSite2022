@@ -1,4 +1,4 @@
-module github.com/wowchemy/starter-hugo-academic
+module github.com/YuanEldaif/PersonalSite2022
 
 go 1.15
 

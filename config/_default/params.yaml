@@ -6,8 +6,8 @@
 # Appearance
 
 appearance:
-  theme_day: minimal
-  theme_night: minimal
+  theme_day: dark
+  theme_night: dark
   font: minimal
   font_size: L
 
@@ -91,7 +91,7 @@ features:
       index_name: ''
       show_logo: false
   map:
-    provider: ''
+    provider: 'google'
     api_key: ''
     zoom: 15
 
@@ -101,6 +101,9 @@ extensions:
   cms:
     branch: main
     local_backend: false
+  isotope:
+    # Enable if you use the Portfolio widget or Publication filter
+    enable: true
   academicons:
     enable: true
 
@@ -109,3 +112,8 @@ extensions:
 security:
   # Allow frame for embedding speaker notes in slides
   allow_frame: true
+
+# Plugin page for clustrmap;
+#need to update layout read https://wowchemy.com/docs/hugo-tutorials/extending-wowchemy/
+plugins_css:
+  plugins_js: custom

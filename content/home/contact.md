@@ -3,7 +3,7 @@
 widget: contact
 
 # This file represents a page section.
-headless: false
+headless: true
 
 # Order that this section appears on the page.
 weight: 130
@@ -13,16 +13,16 @@ weight: 130
 
 content:
   # Automatically link email and phone or display as text?
-  autolink: false
+  autolink: true
 
-  # # Email form provider
-  # form:
-  #   provider: netlify
-  #   formspree:
-  #     id:
-  #   netlify:
-  #     # Enable CAPTCHA challenge to reduce spam?
-  #     captcha: false
+  # Email form provider
+  form:
+    provider: netlify
+    formspree:
+      id:
+    netlify:
+      # Enable CAPTCHA challenge to reduce spam?
+      captcha: true
   # 
   # # Contact details (edit or remove options as required)
   # email: test@example.org

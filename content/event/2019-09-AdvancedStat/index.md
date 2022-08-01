@@ -34,7 +34,7 @@ links:
 - icon: flask
   icon_pack: fas
   name: demo slides
-  url: ../../slides/2019-09-AdvancedStat/index.html 
+  url: ../slides/2019-09-AdvancedStat/index.html 
 - icon: github
   icon_pack: fab
   name: demo code

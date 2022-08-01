@@ -15,30 +15,30 @@ design:
 
 content:
   slides:
-    #- title: 
-      content = 'Parrésia : freedom of speech, confidence (the state of feeling certain about the truth).'
+    - title: 
+      content: 'Parrésia : freedom of speech, confidence (the state of feeling certain about the truth).'
       align: center
       background:
-         position: right
-         #color: '#666'
+         position: center
+         color: '#666'
          brightness: 0.5
          media: Lovetruth.jpg
-    #- title: Lunch & Learn ☕️
+    - title: 
       content: 'Happy is a man who finds wisdom and who acquires understanding. :smile:'
-      align: left
+      align: center
       background:
-        position: center
-        #color: '#555'
-        brightness: 0.5
-        media: lightbulb.jpg
-    #- title: World-Class Semiconductor Lab
+          position: center
+          color: '#555'
+          brightness: 0.5
+          media: lightbulb.jpg
+    - title: 
       content: 'You will know the truth, and the truth will set you free.'
       align: center
       background:
-        position: center
-        #color: '#AED6F1'
-        brightness: 0.2
-        media: wisdom.jpg
+          position: center
+          color: '#AED6F1'
+          brightness: 0.5
+          media: wisdom.jpg
       # link:
       #   icon: graduation-cap
       #   icon_pack: fas
