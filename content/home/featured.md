@@ -7,14 +7,14 @@ widget: featured
 headless: false
 
 # Order that this section appears on the page.
-weight: 80
+weight: 0
 
-title: Featured Publications
+#title: Featured Publications
 subtitle: ''
 
 content:
   # Page type to display. E.g. post, talk, publication...
-  page_type: publication
+  page_type: project
   # Choose how many pages you would like to display (0 = all pages)
   count: 1
   # Filter on criteria
@@ -22,7 +22,7 @@ content:
     author: ''
     category: ''
     publication_type: ''
-    tag: ''
+    tag: 'Machine Learning'
     #Page order: descending (desc) or ascending (asc) date.
   order: desc
 
