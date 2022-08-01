@@ -1,5 +1,5 @@
 ---
-title: "Mutational profiling of myeloid neoplasms associated genes may aid the diagnosis of acute myeloid leukemia with myelodysplasia-related changes"
+title: "EBM LIFE CYCLE: MCMC STRATEGIES FOR SYNTHESIS, DEFENSE, AND DENSITY MODELING"
 authors:  
 - Mitch Hill
 - Jonathan Mitchell

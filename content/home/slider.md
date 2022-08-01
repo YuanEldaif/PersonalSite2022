@@ -20,7 +20,7 @@ content:
       align: center
       background:
          position: right
-         color: '#666'
+         #color: '#666'
          brightness: 0.5
          media: Lovetruth.jpg
     #- title: Lunch & Learn ☕️
@@ -28,7 +28,7 @@ content:
       align: left
       background:
         position: center
-        color: '#555'
+        #color: '#555'
         brightness: 0.5
         media: lightbulb.jpg
     #- title: World-Class Semiconductor Lab
@@ -36,7 +36,7 @@ content:
       align: center
       background:
         position: center
-        color: '#AED6F1'
+        #color: '#AED6F1'
         brightness: 0.2
         media: wisdom.jpg
       # link:
