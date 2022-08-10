@@ -20,7 +20,7 @@ feature:
     icon: chart-line
     icon_pack: fas
     name: Statistics
-  - description: Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn
+  - description: Numpy, Pandas, Matplotlib, Seaborn, Scikit-learn, Tensorflow, Pytorch
     icon: python
     icon_pack: fab
     name: Python
@@ -28,14 +28,18 @@ feature:
     icon: r-project
     icon_pack: fab
     name: R Programming
-  - description: Tensorflow, Pytorch
+  - description: Generative Model, Energy Based Model, Computer Vision
     icon: deeplearning
     icon_pack: custom
     name: Deep Learning
-  - description: DBMS, SQL, Databricks, GCS
+  - description: DBMS, SQL, Azure Databricks, GCS
     icon: database
     icon_pack: fas
-    name: Database
+    name: Database/Platform
+  - description: STAT/MACRO/IML
+    icon: stripe-s
+    icon_pack: fab
+    name: SAS Programming
 # Uncomment to use emoji icons.
 #- icon: ":smile:"
 #  icon_pack: "emoji"

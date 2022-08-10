@@ -13,9 +13,9 @@ image:
   focal_point: Smart
 ---
 
-{{% staticref "files/ExamReport.pdf" %}} Read Report {{% /staticref %}}
+{{% staticref "uploads/ExamReport.pdf" %}} Read Report {{% /staticref %}}
 
-{{% staticref "files/RSampleCode.html" %}} A sample code {{% /staticref %}}
+{{% staticref "uploads/RSampleCode.html" %}} A sample code {{% /staticref %}}
 
 
 Summary: This stack modeling approach is quite unique based on the data distribution. Choosing the appropreciate machine learning method based on the data distribution is the key of the success. 

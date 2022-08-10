@@ -26,14 +26,12 @@ image:
 projects: []
 ---
 
-<link href="/rmarkdown-libs/anchor-sections/anchor-sections.css" rel="stylesheet" />
-<script src="/rmarkdown-libs/anchor-sections/anchor-sections.js"></script>
 
 
 <p>Previously, <a href="https://yuan-du.com/post/2020-09-23-decision-theory/decision-theory/">decision theory</a> was disscussed and an important part of is to evaluate a decision rule for decision making. Since the risk is the average <strong>loss <span class="math inline">\(L(\theta,d)\)</span></strong>, different loss functions were used in Machine Learning models. Mean squared error (MSE) was mentioned as the most famous meausre by using squared error loss proposed by Gauss. Regression, Linear discriminant analysis (<a href="https://en.wikipedia.org/wiki/Linear_discriminant_analysis">LDA</a>) use squared error loss. The squared loss function tends to penalize outliers excessively, leading to slower convergence rates. There are other popular loss functions and they are applied in various Machine Learning and Deep Learning models. The plot shows the loss function for two class classification.</p>
 <div class="figure">
-<img src="/img/Hinge_expo_log.jpg" alt="Loss Functions: &quot;Loss vs y*f(x); y= \pm 1, the prediction is f, with class prediction sign(f)&quot;" />
-<p class="caption">Loss Functions: "Loss vs y*f(x); <span class="math inline">\(y= \pm 1\)</span>, the prediction is f, with class prediction sign(f)"</p>
+<img src="/img/Hinge_expo_log.jpg" alt="" />
+<p class="caption">Loss Functions: “Loss vs y*f(x); <span class="math inline">\(y= \pm 1\)</span>, the prediction is f, with class prediction sign(f)”</p>
 </div>
 <p><strong>1. <span style="color:green">Hinge loss</span></strong></p>
 <p>The hinge loss is a loss function used for “maximum-margin” classification, most notably for support vector machine (SVM).It’s equivalent to minimize the loss function <span class="math inline">\(L(y,f) = [1-yf]_+\)</span>.</p>
