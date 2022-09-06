@@ -66,7 +66,7 @@ email: ''
 highlight_name: true
 ---
 
-Yuan Du is an experienced Data Scientist at Mindoula Health.Inc with 8+ years of professional experience in the academic and Healthcare research setting. Her research experience includes Deep learning and applied Statistical Modeling and Machine Learning in  Medical research, Healthcare policy, Clinical trials, etc. She is also a PhD candidate in Big Data Analytics. Her PhD research is on Energy Based Models, Generative Models, Computer Vision. This is her blog that contains topics in Statistics, Data Science and Deep Learning. 
+Yuan Du is an experienced Data Scientist at Mindoula Health.Inc with 8+ years of professional experience in the academic and Healthcare research setting. Her research experience includes Deep learning, applied Statistical Modeling and Machine Learning in  Medical research, Healthcare policy, Clinical trials, etc. She is also a PhD candidate in Big Data Analytics. Her PhD research is on Energy Based Models, Generative Models, Computer Vision. This is her blog that contains topics in Statistics, Data Science and Deep Learning. 
 
 You may find Yuan's last name as Du or Eldaif since she married Bassem Eldaif, MD. If you want to find out more about Urologic Robotic Surgery, please check out his practice website [**Center for Advanced Urology & Robotics**](https://www.eldaifurology.com/).
 
