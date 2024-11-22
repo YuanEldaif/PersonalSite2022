@@ -6,12 +6,12 @@ title: Yuan Du
 superuser: true
 
 # Role/position/tagline
-role: Senior Data Scientist
+role: Principal Data Scientist
 
 # Organizations/Affiliations to show in About widget
 organizations:
-  - name: Mindoula Health, Inc
-    url: https://www.mindoula.com/
+  - name: UnitedHealth Group
+    url: https://www.unitedhealthgroup.com/
 
 # Short bio (displayed in user profile at end of posts)
 bio: My interests include applied Statistics, Machine Learning, Deep Learning and Healthcare.
@@ -30,9 +30,6 @@ education:
   - course: M.S. in Statistics and Data Science
     institution: University of Central Florida
     year: 2015
-  - course: B.S. in Economic Statistics
-    institution: Chongqing Technology and Business University
-    year: 2010
     
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -66,6 +63,6 @@ email: ''
 highlight_name: true
 ---
 
-Yuan Du is an experienced Data Scientist at Mindoula Health.Inc with 8+ years of professional experience in the academic and Healthcare research setting. Her research experience includes Deep learning, applied Statistical Modeling and Machine Learning in Medical research, Healthcare policy, Clinical trials, etc. She is also a PhD candidate in Big Data Analytics. Her PhD research is on Energy Based Models, Generative Models, Computer Vision. This is her blog that contains topics in Statistics, Data Science and Deep Learning. 
+Yuan Du is an experienced Data Scientist at UnitedHealth Group with 9+ years of professional experience in the academic and Healthcare research setting. Her research experience includes Deep learning, applied Statistical Modeling and Machine Learning in Medical research, Healthcare policy, Clinical trials, etc. She is also a PhD candidate in Big Data Analytics. Her PhD research is on Energy Based Models, Generative Models, Computer Vision. This is her blog that contains topics in Statistics, Data Science and Deep Learning. 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/DemoResume.pdf" "newtab" >}}resumé{{< /staticref >}}.
